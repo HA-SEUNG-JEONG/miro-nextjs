@@ -38,8 +38,8 @@ const Actions = ({ children, side, sideOffset, id, title }: ActionProps) => {
 
     const onDelete = () => {
         mutate({ id })
-            .then(() => toast.success("deleted"))
-            .catch(() => toast.error("failed to delete"));
+            .then(() => toast.success("Board deleted"))
+            .catch(() => toast.error("Failed to delete board"));
     };
 
     return (
