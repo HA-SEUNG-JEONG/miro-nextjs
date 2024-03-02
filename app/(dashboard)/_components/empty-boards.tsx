@@ -21,7 +21,7 @@ const EmptyBoards = () => {
         })
             .then((id) => {
                 toast.success("Board created");
-                router.push(`/boards/${{ id }}`);
+                router.push(`/board/${{ id }}`);
             })
             .catch((err) => {
                 toast.error(err.message);
